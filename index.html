@@ -80,8 +80,9 @@ body { font-family: "DM Sans", sans-serif; background: var(--dark); color: var(-
 .markets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; margin-top: 8px; }
 .market-card { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 24px 16px; text-align: center; transition: background 0.15s; }
 .market-card:hover { background: rgba(255,255,255,0.09); }
-.market-flag { font-size: 2.8rem; line-height: 1; margin-bottom: 10px; }
-.market-name { font-family: "Outfit", sans-serif; font-weight: 600; font-size: 0.85rem; color: rgba(255,255,255,0.85); }
+.market-flag { width: 64px; height: 43px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+.market-code { font-family: "Outfit", sans-serif; font-weight: 800; font-size: 1rem; color: var(--white); margin-bottom: 2px; }
+.market-name { font-family: "Outfit", sans-serif; font-weight: 400; font-size: 0.75rem; color: rgba(255,255,255,0.55); }
 </style>
 </head>
 <body>
@@ -362,16 +363,16 @@ body { font-family: "DM Sans", sans-serif; background: var(--dark); color: var(-
     <div class="section-title">Markets on Stage</div>
     <div class="section-subtitle">Markets presenting at the CTA Workshop 2025</div>
     <div class="markets-grid">
-      <div class="market-card"><div class="market-flag">&#127468;&#127463;</div><div class="market-name">United Kingdom</div></div>
-      <div class="market-card"><div class="market-flag">&#127465;&#127466;</div><div class="market-name">Germany</div></div>
-      <div class="market-card"><div class="market-flag">&#127477;&#127473;</div><div class="market-name">Poland</div></div>
-      <div class="market-card"><div class="market-flag">&#127474;&#127485;</div><div class="market-name">Mexico</div></div>
-      <div class="market-card"><div class="market-flag">&#127466;&#127468;</div><div class="market-name">Egypt</div></div>
-      <div class="market-card"><div class="market-flag">&#127480;&#127466;</div><div class="market-name">Sweden</div></div>
-      <div class="market-card"><div class="market-flag">&#127467;&#127479;</div><div class="market-name">France</div></div>
-      <div class="market-card"><div class="market-flag">&#127464;&#127487;</div><div class="market-name">Czech Republic</div></div>
-      <div class="market-card"><div class="market-flag">&#127470;&#127481;</div><div class="market-name">Italy</div></div>
-      <div class="market-card"><div class="market-flag">&#127468;&#127479;</div><div class="market-name">Greece</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/gb.png" alt="UK"><div class="market-code">UK</div><div class="market-name">United Kingdom</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/de.png" alt="DE"><div class="market-code">DE</div><div class="market-name">Germany</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/pl.png" alt="PL"><div class="market-code">PL</div><div class="market-name">Poland</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/mx.png" alt="MX"><div class="market-code">MX</div><div class="market-name">Mexico</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/eg.png" alt="EG"><div class="market-code">EG</div><div class="market-name">Egypt</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/se.png" alt="SE"><div class="market-code">SE</div><div class="market-name">Sweden</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/fr.png" alt="FR"><div class="market-code">FR</div><div class="market-name">France</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/cz.png" alt="CZ"><div class="market-code">CZ</div><div class="market-name">Czech Republic</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/it.png" alt="IT"><div class="market-code">IT</div><div class="market-name">Italy</div></div>
+      <div class="market-card"><img class="market-flag" src="https://flagcdn.com/w80/gr.png" alt="GR"><div class="market-code">GR</div><div class="market-name">Greece</div></div>
     </div>
     <p style="margin-top:28px; font-size:0.8rem; color:rgba(255,255,255,0.3)">Full participant list will be shared closer to the event.</p>
   </div>
@@ -391,15 +392,16 @@ body { font-family: "DM Sans", sans-serif; background: var(--dark); color: var(-
       </div>
       <div class="logistics-card">
         <h3>Daily Schedule</h3>
-        <p>Doors open: 08:30<br>Sessions: 09:00<br>Day 1 ends: 17:25<br>Day 2 ends: 17:00 → Apéro &amp; Dinner at Grappe d'Or (18:30)<br>Day 2 ends: 17:00</p>
+        <p>Doors open: 08:30<br>Sessions start: 09:00<br>Day 1 ends: 17:25<br>Day 2 ends: 17:00</p>
       </div>
       <div class="logistics-card">
         <h3>Key Contact</h3>
         <p>Carine Friou<br><a href="mailto:Carine.Friou@pmi.com">Carine.Friou@pmi.com</a></p>
       </div>
       <div class="logistics-card full">
-        <h3>Hotel &amp; Travel</h3>
-        <p style="opacity:0.45">Hotel recommendations and travel details will be shared closer to the event.</p>
+        <h3>🍷 &nbsp;Apéro &amp; Dinner — Friday October 1st</h3>
+        <p>Join us for apéro and dinner at <strong>Grappe d'Or</strong> starting at 18:30.<br>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rue+Cheneau-de-Bourg+3,+1003+Lausanne" target="_blank">Rue Cheneau-de-Bourg 3, 1003 Lausanne</a></p>
       </div>
     </div>
   </div>
