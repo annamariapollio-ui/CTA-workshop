@@ -67,14 +67,48 @@ body { font-family: "DM Sans", sans-serif; background: var(--dark); color: var(-
 .logistics-card.full { grid-column: 1 / -1; }
 .footer { text-align: center; padding: 24px; font-size: 0.75rem; color: rgba(255,255,255,0.2); border-top: 1px solid rgba(255,255,255,0.06); margin-top: 40px; }
 @media (max-width: 640px) {
-  .header-inner { padding: 28px 20px; gap: 16px; flex-wrap: wrap; }
-  .header-logo { width: 80px; }
-  .header-text h1 { font-size: 1.4rem; }
-  .content { padding: 24px 16px 60px; }
-  .logistics-grid { grid-template-columns: 1fr; }
-  .session-card { grid-template-columns: 62px 1fr; gap: 12px; }
-  .nav-btn { padding: 14px 18px; font-size: 0.78rem; }
-  .header-spiral { width: 260px; right: -40px; top: -40px; }
+  /* Header */
+  .header { min-height: auto; }
+  .header-inner { padding: 22px 16px; gap: 14px; }
+  .header-logo { width: 72px; }
+  .header-text h1 { font-size: 1.25rem; }
+  .header-text p { font-size: 0.82rem; }
+  .header-spiral { width: 200px; right: -30px; top: -30px; opacity: 0.25; }
+
+  /* Nav */
+  .nav-btn { padding: 13px 14px; font-size: 0.72rem; letter-spacing: 0.3px; }
+
+  /* Content */
+  .content { padding: 20px 14px 60px; }
+
+  /* Day tabs */
+  .day-tabs { width: 100%; }
+  .day-btn { flex: 1; font-size: 0.72rem; padding: 9px 8px; text-align: center; }
+
+  /* Session cards */
+  .session-card { grid-template-columns: 56px 1fr; gap: 10px; padding: 14px 14px; }
+  .session-card.break { padding: 9px 14px; }
+  .session-time { font-size: 0.72rem; }
+  .session-title { font-size: 0.92rem; }
+  .session-speaker { font-size: 0.78rem; }
+  .session-topics { font-size: 0.75rem; }
+  .session-market { font-size: 0.72rem; }
+  .part-label { font-size: 0.65rem; margin: 24px 0 10px; }
+
+  /* Markets grid — 2 columns on mobile */
+  .markets-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .market-card { padding: 18px 10px; }
+  .market-flag { width: 52px; height: 35px; }
+  .market-code { font-size: 0.9rem; }
+  .market-name { font-size: 0.7rem; }
+
+  /* Logistics */
+  .logistics-grid { grid-template-columns: 1fr; gap: 12px; }
+  .logistics-card { padding: 18px; }
+  .logistics-card.full { grid-column: 1; }
+
+  /* Section headings */
+  .section-title { font-size: 1.25rem; }
 }
 
 .markets-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; margin-top: 8px; }
