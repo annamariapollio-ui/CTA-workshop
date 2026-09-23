@@ -1,4 +1,4 @@
-# CTA Workshop — September 30 & October 1, 2025
+# CTA Workshop — September 30 & October 1, 2026
 
 Participant-facing web app for the **Call to Action Workshop**, hosted in Lausanne, Switzerland.
 
@@ -6,17 +6,9 @@ Participant-facing web app for the **Call to Action Workshop**, hosted in Lausan
 
 Single self-contained `index.html` — no build step, no dependencies.
 
-## Tabs
-
-| Tab | Content |
-|-----|---------|
-| **Agenda** | Day 1 (Sept 30) and Day 2 (Oct 1), split into Morning / Afternoon / Evening |
-| **Participants** | To be filled once list is confirmed |
-| **Logistics** | Dates, venue, schedule, key contacts |
-
 ## Deploy
 
-Push to GitHub, connect to Vercel — deploys automatically. Or use GitHub Pages (Settings → Pages → main / root).
+Push to GitHub, connect to Vercel — deploys automatically.
 
 ## Confidential
 
